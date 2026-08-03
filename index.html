@@ -5,8 +5,28 @@
         <meta charset="UTF-8">
         <meta name="description" content="its a billionaires world, and youre the permanent underclass">
         <link rel="stylesheet" href="main.css">
+        <style>
+        </style>
     </head>
     <body>
-        <p style="text-align:center;"><img src="/image.png" alt="fuck"></p>
-    </body>
+        <a href="#" class="play-link" id="playBtn">fuck you</a>
+
+        <div class="video-container" id="videoContainer">
+            <video id="vidya" src="Baltimore Maoists.mp4" loop muted playsinline controls></video>
+        </div>
+
+        <script>
+            const playBtn = document.getElementById('playBtn');
+            const videoContainer = document.getElementById('videoContainer');
+            const myVideo = document.getElementById('myVideo');
+
+            playBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                videoContainer.style.display = 'block';
+
+                vidya.play();
+            });
+        </script>
+</bo    dy>
 </html>
